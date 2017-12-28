@@ -1,7 +1,12 @@
-{ 
-  "name": "learn-travis",
-  "description": "docker build of fib_py",
-  "author": "kinesis",
-  "version": "1.0",
-  "scripts": "docker build ."
-}
+
+  name:
+   - learn-travis
+  description:
+   - docker build of fib_py
+  author: 
+   - kinesis
+  version: 
+   - 1.0
+  scripts:
+   - docker build
+
