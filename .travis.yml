@@ -1,12 +1,11 @@
-
-  name:
-   - learn-travis
-  description:
-   - docker build of fib_py
-  author: 
-   - kinesis
-  version: 
-   - 1.0
-  scripts:
-   - docker build
-
+ame: learn-travis
+description: docker build of fib_pyi
+language: python
+services: docker
+before_install:
+- docker build -t fib_py .
+- docker run -d -p 127.0.0.1:80:80 --name fib_py fib_py
+- docker ps
+author: kinesis
+version: 1.0
+script: docker ps | grep -q blog
